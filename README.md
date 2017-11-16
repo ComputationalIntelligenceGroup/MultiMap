@@ -10,8 +10,8 @@
 
 #### user
 
- - WIN: https://github.com/ComputationalIntelligenceGroup/MultiMap/releases/download/v1.0.0/multimap.Setup.1.0.0.exe
- - LINUX (DEB): https://github.com/ComputationalIntelligenceGroup/MultiMap/releases/download/v1.0.0/multimap_1.0.0_amd64.deb
+ - Windows:  [multimap.Setup.exe](https://github.com/ComputationalIntelligenceGroup/MultiMap/releases/download/v1.0.0/multimap.Setup.1.0.0.exe)
+ - LINUX (DEB): [multimap.deb](https://github.com/ComputationalIntelligenceGroup/MultiMap/releases/download/v1.0.0/multimap_1.0.0_amd64.deb)
 
 
 #### dev

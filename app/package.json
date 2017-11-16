@@ -36,9 +36,9 @@
   "dependencies": {
     "bioformatsextension": "0.0.5",
     "electron-is-dev": "^0.1.2",
-    "electrongui": "^0.6.10",
+    "electrongui": "^0.7.6",
     "graphicsmagickextension": "^0.0.3",
-    "imagejextension": "^0.1.12",
-    "mapextension": "^0.1.25"
+    "imagejextension": "^0.1.15",
+    "mapextension": "^0.2.3"
   }
 }

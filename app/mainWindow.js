@@ -49,6 +49,7 @@ let gui = new Gui({
     clean: isCleanW
   }
 })
+gui.win.setTitle('multimap')
 gui.hide()
 
 
