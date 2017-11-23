@@ -21,25 +21,15 @@ const {
   MenuItem,
   app
 } = require('electron').remote
-const isSecond = app.makeSingleInstance((argv, workingdir) => {
-  if (argv.includes('--clean')) gui.workspace.newChecking()
-  if (win) win.show()
-})
-if (isSecond) {
-  app.quit()
-}
 const isDev = require('electron-is-dev')
 const {
   TasksViewer,
-  Gui,
-  util
+  Gui
 } = require(`electrongui`)
 
-const {
-  ipcRenderer
-} = require('electron')
-const MapExtension = require('mapextension')
-const ImageJExtension = require('imagejextension')
+const fs = require('fs')
+const path = require('path')
+
 
 let mainProc = require('electron').remote.require('process')
 let isCleanW = mainProc.argv.includes('--clean')
@@ -51,32 +41,6 @@ let gui = new Gui({
 })
 gui.win.setTitle('multimap')
 gui.hide()
-
-
-//prevent app closing
-document.addEventListener('dragover', function(event) {
-  event.preventDefault()
-  return false
-}, false)
-
-document.addEventListener('drop', function(event) {
-  event.preventDefault()
-  return false
-}, false)
-
-
-if (isDev) {
-  gui.addMenuItem(new MenuItem({
-    label: "Dev",
-    type: 'submenu',
-    submenu: Menu.buildFromTemplate([{
-      label: 'toggledevtools',
-      click(item, focusedWindow) {
-        if (focusedWindow) focusedWindow.webContents.toggleDevTools()
-      }
-    }])
-  }))
-}
 
 gui.addMenuItem(new MenuItem({
   label: "File",
@@ -151,16 +115,19 @@ gui.extensions.on('error', (e) => {
 
 gui.extensions.activate() //activate the extensionmanager
 let tasksViewer = new TasksViewer(gui)
-let mapext = new MapExtension(gui)
 tasksViewer.activate()
-mapext.activate()
-mapext.show()
-let imgj = new ImageJExtension(gui)
-imgj.activate()
 
-gui.extensions.load('graphicsmagickextension')
-gui.extensions.load('bioformatsextension')
-gui.viewTrick()
+fs.readdir(app.getPath('userData'), (err, files) => {
+  if (!err) {
+    if (!files.includes('.installed')) {
+      gui.extensions.install('mapextension')
+      gui.extensions.install('imagejextension')
+      gui.extensions.install('devext')
+      fs.appendFile(path.join(app.getPath('userData'), '.installed'), `${app.getName()} installed`, 'utf8');
+    }
+  }
+})
+
 let stat = 'default'
 if (isDev) stat = 'warning'
 gui.alerts.add(`App loaded in ${(new Date())-t} ms`, stat)

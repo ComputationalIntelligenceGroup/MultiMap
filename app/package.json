@@ -1,7 +1,7 @@
 {
   "name": "multimap",
   "author": "Gherardo Varando <gherardo.varando@gmail.com>",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "An extendible and flexible application for maps analysis and visualization",
   "product name": "MultiMap",
   "homepage": "https://github.com/gherardovarando/Atlas",
@@ -26,7 +26,9 @@
     "leaflet",
     "brain",
     "neuroscience",
-    "spatial data"
+    "spatial data",
+    "electrongui",
+    "electron"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -34,11 +36,7 @@
     "license-checker": "*"
   },
   "dependencies": {
-    "bioformatsextension": "0.0.5",
     "electron-is-dev": "^0.1.2",
-    "electrongui": "^0.7.6",
-    "graphicsmagickextension": "^0.0.3",
-    "imagejextension": "^0.1.15",
-    "mapextension": "^0.2.3"
+    "electrongui": "^0.7.6"
   }
 }
