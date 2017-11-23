@@ -12,12 +12,6 @@
   },
   "build": {
     "appId": "multimap.cig",
-    "extraResources": [
-      {
-        "from": "app/node_modules/imagejextension/macros",
-        "to": "macros"
-      }
-    ],
     "mac": {
       "category": "your.app.category.type"
     },
