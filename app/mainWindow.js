@@ -24,7 +24,8 @@ const {
 const isDev = require('electron-is-dev')
 const {
   TasksViewer,
-  Gui
+  Gui,
+  util
 } = require(`electrongui`)
 
 const fs = require('fs')
@@ -33,6 +34,10 @@ const path = require('path')
 
 let mainProc = require('electron').remote.require('process')
 let isCleanW = mainProc.argv.includes('--clean')
+
+util.body.ondragover = (ev) => {
+  ev.preventDefault()
+}
 
 let gui = new Gui({
   workspace: {
