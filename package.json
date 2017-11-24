@@ -8,7 +8,8 @@
     "start": "electron ./app --enable-logging",
     "startclean": "electron ./app --enable-logging --clean",
     "dev": "NODE_ENV='development' npm run start",
-    "dist": "build  -lw"
+    "dist": "build  -lw",
+    "distm": "build -m"
   },
   "build": {
     "appId": "multimap.cig",
