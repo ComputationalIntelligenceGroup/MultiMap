@@ -31,7 +31,6 @@ const {
 const fs = require('fs')
 const path = require('path')
 
-
 let mainProc = require('electron').remote.require('process')
 let isCleanW = mainProc.argv.includes('--clean')
 
@@ -115,7 +114,7 @@ gui.workspace.on('error', (e) => {
 
 gui.extensions.on('error', (e) => {
   gui.alerts.add(e.message, 'error')
-  throw e
+  console.log(e)
 })
 
 gui.extensions.activate() //activate the extensionmanager

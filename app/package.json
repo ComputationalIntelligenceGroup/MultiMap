@@ -33,14 +33,10 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "1.4.16",
-    "license-checker": "*",
     "electron-packager": "*"
   },
   "dependencies": {
     "electron-is-dev": "^0.1.2",
-    "electrongui": "^1.0.0",
-    "leaflet": "^1.2.0",
-    "mapextension": "^0.4.1",
-    "npm": "^5.5.1"
+    "electrongui": "^1.0.0"
   }
 }
