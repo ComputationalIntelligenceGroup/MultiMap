@@ -128,8 +128,8 @@ fs.readdir(app.getPath('userData'), (err, files) => {
       gui.extensions.install('mapextension')
       gui.extensions.install('imagejextension')
       gui.extensions.install('devext')
-      fs.appendFile(path.join(app.getPath('userData'), '.installed'), `${app.getName()} installed`, 'utf8');
     }
+    fs.appendFile(path.join(app.getPath('userData'), '.installed'), `${app.getName()} installed`, 'utf8');
   }
 })
 
