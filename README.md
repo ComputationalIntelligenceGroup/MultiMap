@@ -1,18 +1,13 @@
 # MultiMap
-## v1.0.0
+## v1.3.0
 
 
 ### Authors
  - Gherardo Varando <gherardo.varando@gmail.com>
 
+### Users manual
 
-### Install
-
-#### user
-
- - Windows:  [multimap.Setup.exe](https://github.com/ComputationalIntelligenceGroup/MultiMap/releases/download/v1.1.0/multimap.Setup.1.1.0.exe)
- - LINUX (DEB): [multimap.deb](https://github.com/ComputationalIntelligenceGroup/MultiMap/releases/download/v1.1.0/multimap_1.1.0_amd64.deb)
-
+https://computationalintelligencegroup.github.io/MultiMap-documentation/Index.html
 
 #### dev
 - install Node and npm
@@ -26,14 +21,6 @@
 
 **MultiMap** is built using [electrongui](http://github.com/gherardovarando/electrongui). See the related documentation on how to develop extensions.
 
-Extensions already present
-
-- [mapextension](http://github.com/gherardovarando/mapextension)
-- [imagejextension](http://github.com/gherardovarando/imagejextension)
-
-
-### Founding
- This application is been developed by the Computational Intelligence Group (UPM) with the help of the Laboratorio Cajal de Circuitos Corticales (UPM/CSIC) with the economic support of the Spanish Ministerio de Economía y Competitividad through the Cajal Blue Brain Project( Spanish partner of the Blue Brain Project initiative from EPFL) and of the European Union through the Human Brain Project.
 
 
 ### License
