@@ -39,7 +39,7 @@ if (process.platform === 'win32') {
   trayimg = `${__dirname}/icon.ico`
 }
 
-
+app.setPath('userData',path.join(app.getPath('home'),`.${app.getName()}`))
 
 
 function createWindow() {
