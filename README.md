@@ -1,8 +1,6 @@
 # MultiMap
 ## v1.3.0
 
-
-
 ### Authors
  - Gherardo Varando <gherardo.varando@gmail.com>
 
