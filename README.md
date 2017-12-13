@@ -1,14 +1,12 @@
 # MultiMap
 ## v1.3.0
 
-
-
 ### Authors
  - Gherardo Varando <gherardo.varando@gmail.com>
 
 ### Users manual
 
-https://computationalintelligencegroup.github.io/MultiMap-documentation/Index.html
+https://computationalintelligencegroup.github.io/MultiMap-documentation/
 
 #### dev
 - install Node and npm
