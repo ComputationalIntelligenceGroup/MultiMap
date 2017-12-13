@@ -7,7 +7,7 @@
 
 ### Users manual
 
-https://computationalintelligencegroup.github.io/MultiMap-documentation/Index.html
+https://computationalintelligencegroup.github.io/MultiMap-documentation/
 
 #### dev
 - install Node and npm
