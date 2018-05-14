@@ -12,7 +12,7 @@ https://computationalintelligencegroup.github.io/MultiMap-documentation/
 
 Download the installer [from the releases page](https://github.com/ComputationalIntelligenceGroup/MultiMap/releases) and install MultiMap. When you first open MultiMap app, the basic extensions will be downloaded. 
 
-#### dev
+#### dev install 
 - install Node and npm
 - Clone the repository
 - navigate in the top folder of the repository
