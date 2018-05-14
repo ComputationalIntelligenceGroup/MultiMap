@@ -1,5 +1,5 @@
 # MultiMap
-## v1.3.0
+## v1.4.0
 
 ### Authors
  - Gherardo Varando <gherardo.varando@gmail.com>
@@ -7,6 +7,10 @@
 ### Users manual
 
 https://computationalintelligencegroup.github.io/MultiMap-documentation/
+
+### Install 
+
+Download the installer [from the releases page](https://github.com/ComputationalIntelligenceGroup/MultiMap/releases) and install MultiMap. When you first open MultiMap app, the basic extensions will be downloaded. 
 
 #### dev
 - install Node and npm
